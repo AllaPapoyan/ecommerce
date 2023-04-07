@@ -1,0 +1,57 @@
+@import "../../../../assets/style/variabless";
+@import "../../../../assets/style/fonts";
+@import "../../../../assets/style/mixin";
+.down-part{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #9a9a9a;
+  font-family: $Regular;
+  @include screen-max-width-767{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .part-one{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    p{
+      font-size: 11px;
+      line-height: 13px;
+      color: #CACACA;
+    }
+  }
+  .part-two{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: start;
+    width: 380px;
+    gap: 10px;
+    p{
+      color: #CACACA;
+      &:last-child{
+        font-size: 11px;
+        line-height: 13px;
+        color: #CACACA;
+      }
+    }
+    .payments{
+      display: flex;
+      justify-content: space-between;
+      @include screen-max-width-320{
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .payment-img{
+        width: 60px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        object-fit: cover;
+      }
+    }
+  }
+}

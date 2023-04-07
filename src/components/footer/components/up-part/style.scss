@@ -1,0 +1,94 @@
+@import "../../../../assets/style/variabless";
+@import "../../../../assets/style/fonts";
+@import "../../../../assets/style/mixin";
+.up-part{
+  display: flex;
+  justify-content: space-between;
+  color: #f2f2f2;
+  font-family: $Regular;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #9a9a9a;
+  @include screen-max-width-991{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+.up-part-left{
+  align-items: center;
+  .oClick{
+    background-color: #f2f2f2;
+  }
+}
+  .up-part-center{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    @include screen-max-width-991{
+      align-items: center;
+    }
+    .icon-bloc{
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+    }
+  }
+.up-part-right{
+  width: 525px;
+@include screen-max-width-767{
+  width: 100%;
+}
+  .search-inp-part{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    .inp{
+      width: 80%;
+      height: 44px;
+      border-radius: 40px;
+      border: none;
+    }
+    .follow-part{
+      border: none;
+      height: 44px;
+      max-width: 100px;
+      width: 100%;
+      position: absolute;
+      border-radius: 40px;
+      right: 0;
+      background-color: #9306FF;
+      color: #f2f2f2;
+
+      @include screen-max-width-576{
+        width: 70px;
+      }
+
+    }
+  }
+  .checkbox-part{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    .checkbox{
+      width: 16px;
+      height: 16px;
+      align-items: center;
+      background-color: #f2f2f2;
+
+    }
+    .text{
+      color: #CACACA;
+      font-size: 10px;
+      width: 90%;
+    }
+  }
+}
+}

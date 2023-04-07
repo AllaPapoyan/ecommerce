@@ -1,0 +1,143 @@
+@import "../../assets/style/variabless";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+.aboutProduct{
+  display: flex;
+  justify-content: space-between;
+  font-family: $Regular;
+@include screen-max-width-767{
+  flex-wrap: wrap;
+}
+  .product-code{
+    width: 377px;
+    height: 576px;
+    border: 1px solid #AEAEAE;
+    border-radius: 25px;
+    margin: 40px 0;
+
+    @media screen  and (max-width: 840px){
+      width: 300px;
+    }
+
+    .code-num{
+      text-align: end;
+      margin: 25px 23px 0px;
+    }
+    .product-name{
+      width: 100%;
+      padding: 15px 23px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .retting{
+      width: 100%;
+      padding: 15px 23px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 25px;
+      color: #9a9a9a;
+    }
+    .products-prise{
+      width: 100%;
+      padding: 15px 23px 5px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 25px;
+    }
+    .price{
+      width: 100%;
+      padding: 0 23px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .buy-like{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding:35px 23px 25px;
+      .cart-btn{
+        width: 250px;
+        height: 50px;
+        background: #9306FF;
+        border-radius: 12px;
+        color: #FFFFFF;
+        border: none;
+      }
+      .like-btn{
+        width: 50px;
+        height: 50px;
+        background: #FFFFFF;
+        border: 1.5px solid #9306FF;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .lll{
+          background-color: #9306FF;
+        }
+      }
+
+
+    }
+    .text-aa{
+      width: 100%;
+      padding: 20px 15px;
+      font-size: 15px;
+      line-height: 1.2;
+
+    }
+  }
+  .this-product{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px ;
+
+    @include screen-max-width-1200{
+      flex-wrap: wrap;
+     .right-part{
+       margin-top: 0;
+
+     }
+    }
+    .left-part{
+      width: 450px;
+      .pic-part{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        .little-part{
+          width: 100px;
+          img{
+            width: 60px;
+            height: 60px;
+            margin: 15px;
+          }
+        }
+        .big-img{
+        display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #9306FF;
+        }
+      }
+    }
+    .right-part{
+      max-width: 390px;
+      width: 100%;
+      height: 150px;
+      margin-top: 60px;
+      p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        &:first-child{
+          font-weight: bolder;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

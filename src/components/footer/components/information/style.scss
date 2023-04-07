@@ -1,0 +1,44 @@
+@import "../../../../assets/style/variabless";
+@import "../../../../assets/style/fonts";
+@import "../../../../assets/style/mixin";
+.center-part{
+font-family:$Regular ;
+ margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  @include screen-max-width-991{
+    flex-wrap: wrap;
+  }
+  .categories-list{
+    list-style-type: none;
+    color: white;
+  padding-bottom: 40px;
+    li{
+      font-size: 16px;
+      margin: 10px 0;
+      font-weight: 400;
+      &:first-child{
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .i-cont{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 50%;
+        .f-phone{
+          background-color: #501380;
+        }
+      }
+    }
+    .li-info{
+      @include screen-max-width-576{
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
